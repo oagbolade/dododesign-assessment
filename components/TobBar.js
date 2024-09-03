@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function TopBar() {
   return (
-    <header className="flex items-center justify-between bg-white p-4 shadow-md">
+    <header className="flex items-center justify-between bg-white p-4 border-solid border-2 border-gray-200 border-l-0">
       <div className="flex-1"></div>
 
       <div className="relative mr-16">

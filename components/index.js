@@ -37,7 +37,7 @@ export function MainPage() {
       <div className="flex-1">
         <TopBar />
         {/* Main Content */}
-        <main className="flex-1 bg-gray-100 p-8">
+        <main className="flex-1 bg-gray-100 p-8 pb-10 overflow-y-auto">
           <header className="mb-8">
             <h1 className="text-2xl text-black font-bold">Welcome, Susan</h1>
             <p className="text-gray-700 mt-2 text-base">
@@ -54,12 +54,11 @@ export function MainPage() {
               <p className="text-sm text-gray-700 mt-2 mb-2">
                 Welcome to the cool kids club
               </p>
-              <h1 className="w-4/6 text-2xl text-violet-700 font-bold">
+              <p className="w-3/6 md:w-4/6 text-xs xs:text-xs md:text-2xl text-violet-700 font-bold">
                 The new way designers revolutionize their work. See how others
                 are using Zadwax to accelerate their design process.
-              </h1>
+              </p>
             </div>
-            {/* Vector Icon positioned at the bottom right */}
             <div className="absolute -bottom-7 -right-4 p-4 overflow-hidden">
               <VectorIcon />
             </div>
@@ -75,7 +74,7 @@ export function MainPage() {
                   </p>
                 </div>
                 <div>
-                  <button className="bg-purple-700 text-white py-2 px-4 rounded-lg">
+                  <button className=" bg-indigo-600 text-white py-2 px-4 rounded-lg text-sm sm:text-xs">
                     Create project
                   </button>
                 </div>
@@ -158,21 +157,18 @@ export function MainPage() {
           </section>
 
           {/* Resources Section */}
-          <section className="mt-10 text-black">
+          <section className="mt-10 text-black overflow-visible grid justify-center">
             <h2 className="text-xl font-bold mb-6 text-gray-950">
               Resources for you
             </h2>
-            <div
-              style={{ height: "300px" }}
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-40 justify-between"
-            >
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 md:gap-5 lg:gap-40 xl:gap-40 justify-between sm:justify-center">
               {resources.map((resource, index) => (
                 <div
                   key={index}
                   style={{ width: "265.75px", height: "227px" }}
                   className="bg-white shadow-lg rounded-lg overflow-hidden relative"
                 >
-                  <div className="absolute= inset-0= flex items-center= =justify-center">
+                  <div className="flex">
                     <BarGraphIcon />
                   </div>
                   <div className="p-4 relative z-10 bg-white bg-opacity-90">
