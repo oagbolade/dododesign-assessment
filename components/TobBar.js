@@ -8,7 +8,7 @@ export default function TopBar() {
     <header className="flex items-center justify-between bg-white p-4 shadow-md">
       <div className="flex-1"></div>
 
-      <div className="relative">
+      <div className="relative mr-16">
         <input
           type="text"
           placeholder="Search"
@@ -18,7 +18,9 @@ export default function TopBar() {
       </div>
 
       <div className="flex items-center space-x-4 ml-4">
-        <NotificationIcon />
+        <div className="mx-8">
+          <NotificationIcon />
+        </div>
         <Image src={Avatar} alt="Avatar" />
       </div>
     </header>
