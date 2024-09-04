@@ -1,3 +1,5 @@
+"use client";
+import React, { useState } from "react";
 import { NotificationIcon } from "@/assets/Icons";
 import { FiSearch } from "react-icons/fi";
 import Avatar from "./../assets/avatar.png";
@@ -17,7 +19,7 @@ export default function TopBar() {
         <FiSearch className="absolute text-sm left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
       </div>
 
-      <div className="flex items-center space-x-4 ml-4">
+      <div className="flex items-center space-x-4 mr-6 sm:ml-4">
         <div className="mx-8">
           <NotificationIcon />
         </div>

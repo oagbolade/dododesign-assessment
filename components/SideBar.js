@@ -14,7 +14,7 @@ export const SideBar = () => {
   return (
     <>
       <MiniSideBar />
-      <aside className="w-64 p-4 border-solid border-2 border-gray-200">
+      <aside className="w-64 p-4 border-solid border-2 border-gray-200 sticky">
         <div className="text-2xl mb-6">
           <ZadwaxIcon />
         </div>

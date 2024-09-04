@@ -3,7 +3,7 @@ import React from "react";
 
 export const MiniSideBar = () => {
   return (
-    <aside className="w-18 bg-violet-900">
+    <aside className="w-18 bg-violet-900 sticky">
       <nav className="mt-2">
         <ul>
           <li className="mb-2">

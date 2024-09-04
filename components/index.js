@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { SideBar } from "./SideBar";
 import TopBar from "./TobBar";
@@ -33,7 +34,7 @@ export function MainPage() {
 
   return (
     <div className="flex min-h-screen">
-      <SideBar />
+      <SideBar />{" "}
       <div className="flex-1">
         <TopBar />
         {/* Main Content */}
